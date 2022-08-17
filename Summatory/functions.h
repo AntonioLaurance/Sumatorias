@@ -3,34 +3,41 @@
 */
 
 /*
- * Complejidad algoritmica:
+ * @params:
+ *
+ * Complejidad algoritmica temporal única: T(n) = 3n + 3
 */
-long int sumaIterativa(int n){
-	long int sum = 0;	
+unsigned long int sumaIterativa(unsigned int n){
+	unsigned long int sum = 0;	// Acumulador 
 
 	for(int i = 1; i <= n; i++)
-		sum += static_cast<long int>(i);
+		sum += static_cast<unsigned long int>(i);
 
 	return sum;
 }
 
 /*
- * Complejidad algoritmica:
+ * @params:
+ *
+ * Complejidad algoritmica temporal para peor de los casos: 	T(n) = n
+ * Complejidad algoritmica temporal para el mejor de los casos: T(n) = 0
 */
-long int sumaRecursiva(int n){
+unsigned long int sumaRecursiva(unsigned int n){
 	// Caso base 
 	if(n == 1)
-		return static_cast<long int>(n);
+		return static_cast<unsigned long int>(n);
 	// Caso recursivo
 	else
-		return static_cast<long int>(n + sumaRecursiva(n - 1));
+		return static_cast<unsigned long int>(n + sumaRecursiva(n - 1));
 }
 
 /*
- * Complejidad algoritmica:
+ * @params: 
+ *
+ * Complejidad algoritmica temporal única: T(n) = 1
 */
 /* Formula de Gauss para las sumatorias */
-long int sumaDirecta(int n){
-	return static_cast<long int>((n * (n + 1))/2);
+unsigned long int sumaDirecta(unsigned int n){
+	return static_cast<unsigned long int>((n * (n + 1))/2);
 }
 
