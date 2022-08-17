@@ -11,19 +11,20 @@
 using namespace std;
 
 int main(int argc, char *argv[]){
-	int n;
+	unsigned int n;
 
 	if(argc < 2 ){
 		// n ingresado manualmente 
 		cout << "Sumatoria de 1 hasta n" << endl;
 		cout << "n(número entero): ";
+
 		cin >> n;
+		cout << endl;
 	} else{
 		// n ingresado como parámetro de programa
-		n = atoi(argv[1]); 
+		n = static_cast<unsigned int>(atoi(argv[1])); 
 	}
 	
-	cout << endl;
 	cout << "Sumatoria de 1 hasta " << n << endl;
 	cout << endl;
 
