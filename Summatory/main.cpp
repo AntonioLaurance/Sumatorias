@@ -1,11 +1,12 @@
 /* Programación de Estructuras de datos y Algoritmos Fundamentales
  * Actividad 1.1: Funciones Iterativas, Recursivas y su análisis de Complejidad
- * Ricardo Campos Luna
- * Victoria Rodríguez de León
+ * Victoria Rodríguez de León			A01656328
+ * Ricardo Campos Luna					A01656898
  * Martes 16 de agosto del 2022
 */
 
 #include <iostream>
+#include <time.h>
 #include "functions.h"
 
 using namespace std;
