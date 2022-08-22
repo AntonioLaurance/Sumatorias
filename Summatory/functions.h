@@ -4,6 +4,11 @@
 */
 
 /*
+ * @fn: unsigned long int sumaIterativa(unsigned int n)
+ *
+ * @brief:
+ * 		Suma todos los números enteros de 1 a n
+ * 
  * @params: 
  * 		n: Es un número entero positivo
  * 
@@ -25,6 +30,11 @@ unsigned long int sumaIterativa(unsigned int n){
 }
 
 /*
+ * @fn: unsigned long int sumaRecursiva(unsigned int n)
+ *
+ * @brief:
+ * 		Suma todos los números enteros de 1 a n
+ * 
  * @params:
  * 		n: Es un número entero positivo
  * 
@@ -47,7 +57,10 @@ unsigned long int sumaRecursiva(unsigned int n){
 }
 
 /*
- * Se utilizo la fórmula de Gauss para calcular esta sumatoria
+ * @fn: unsigned long int sumaDirecta(unsigned int n)
+ *
+ * @brief:
+ * 		Suma todos los números enteros de 1 a n
  *
  * @params: 
  * 		n: Es un número entero positivo
@@ -58,6 +71,8 @@ unsigned long int sumaRecursiva(unsigned int n){
  * 		
  * Complejidad algoritmica temporal única: T(n) = 1
  * Complejidad algoritmica espacial: S(n) = 
+ * 
+ * Se utilizo la fórmula de Carl Gauss para calcular esta sumatoria
 */
 
 unsigned long int sumaDirecta(unsigned int n){
