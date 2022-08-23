@@ -77,11 +77,11 @@ unsigned long int sumaRecursiva(unsigned int n){
  * 
  * Se utilizo la fórmula de Carl Friedrich Gauss para calcular esta sumatoria,
  * la cuál es:
- *  							n(n + 1)/2 
+ *  				n(n + 1)/2 
  * 
  * long unsigned int ocupa 8 bytes por lo tanto el valor máximo que puede alcanzar
  * es el de:
- * 							2^8(8) - 1 = 2^64 - 1
+ * 			    2^8(8) - 1 = 2^64 - 1
  * 
  * Por lo tanto n(n + 1) debe ser menor a 2^64 - 1 para esto se separó en 
  * 
