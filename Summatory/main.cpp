@@ -6,6 +6,19 @@
  * Martes 16 de agosto del 2022
 */
 
+// Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
+
+/* ------------------------------------------------------------------------------
+ * 								    TEST CASES
+ * ------------------------------------------------------------------------------
+ *  1) En el método directo cuando la cantidad ingresada es muy grande 
+ *  2) Cuando la cantidad ingresada es negativa 
+ *  3) Cuando el usuario ingresa otra cosa que no son valores numéricos 
+ * 
+*/
+
+// ¿Ocupamos manejo de excepciones?
+
 #include <iostream>
 #include <time.h>
 #include "functions.h"
@@ -39,7 +52,8 @@ int main(int argc, char *argv[]){
 	end = clock();
 	diff = end - begin;
 	
-	cout << "Suma iterativa: " << sumaIterativa(n) << "\t" << "Tiempo: " << diff << endl;
+	cout << "Suma iterativa: " << sum1 << "\t" << "Tiempo: ";
+	cout << static_cast<long double>(diff)/CLOCKS_PER_SEC << " segundos" << endl;
 
 	// Caso Recursivo
 	begin = clock();
@@ -47,7 +61,8 @@ int main(int argc, char *argv[]){
 	end = clock();
 	diff = end - begin;
 
-	cout << "Suma recursiva: " << sumaRecursiva(n) << "\t" << "Tiempo: " << diff << endl;
+	cout << "Suma recursiva: " << sum2 << "\t" << "Tiempo: ";
+	cout << static_cast<long double>(diff)/CLOCKS_PER_SEC << " segundos" << endl;
 
 	// Caso Directo
 	begin = clock();
@@ -55,7 +70,9 @@ int main(int argc, char *argv[]){
 	end = clock();
 	diff = end - begin;
 
-	cout << "Suma directa: " << sumaDirecta(n) << "\t" << "Tiempo: " << diff << endl << endl;	
+	cout << "Suma directa: \t" << sum3 << "\t" << "Tiempo: ";
+	cout << static_cast<long double>(diff)/CLOCKS_PER_SEC << " segundos" << endl << endl;
+	
  
 	return 0;
 }

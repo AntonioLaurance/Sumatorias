@@ -23,7 +23,7 @@
 unsigned long int sumaIterativa(unsigned int n){
 	unsigned long int sum = 0;	// Acumulador 
 
-	for(int i = 1; i <= n; i++)
+	for(unsigned int i = 1; i <= n; i++)
 		sum += static_cast<unsigned long int>(i);
 
 	return sum;
@@ -73,9 +73,17 @@ unsigned long int sumaRecursiva(unsigned int n){
  * Complejidad algoritmica espacial: S(n) = 
  * 
  * Se utilizo la fórmula de Carl Gauss para calcular esta sumatoria
+ * 
+ * long unsigned int ocupa 8 bytes por lo tanto el valor máximo que puede alcanzar
+ * es el de:
+ * 					2^8(8) - 1 = 2^64 - 1
+ * 
+ * Por lo tanto n(n + 1) debe ser menor a 2^64 - 1
+ * 
 */
 
 unsigned long int sumaDirecta(unsigned int n){
-	return static_cast<unsigned long int>((n * (n + 1))/2);
+	unsigned long int sum = new 
+	return static_cast<unsigned long int>(n * (n + 1))/2;
 }
 
