@@ -1,7 +1,7 @@
 /* Programación de Estructuras de datos y Algoritmos Fundamentales
  * Actividad 1.1: Funciones Iterativas, Recursivas y su análisis de Complejidad
  * Victoria Rodríguez de León			A01656328
- * Ricardo Campos Luna				    A01656898
+ * Ricardo Campos Luna				A01656898
  * Raúl Armando Vélez Robles			A01782488
  * Lunes 22 de agosto del 2022
 */
@@ -9,9 +9,9 @@
 // Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
 // Profesor: Francisco Javier Vázquez Gómez
 
-/* ------------------------------------------------------------------------------
- * 								    TEST CASES
- * ------------------------------------------------------------------------------
+/* ------------------------------------------------------------------------------------------------
+ * 					    TEST CASES
+ * ------------------------------------------------------------------------------------------------
  *  1) Cuando la cantidad ingresada es muy grande, se provoca
  * 	desbordamiento de memoria (Stack Overflow) en el caso recursivo, los otros casos 
  *  funcionan bien mientras el resultado de la operación sea menor que lo que puede 
@@ -27,7 +27,7 @@
  * 
  *  4) Cuando el tiempo en ejecutar un algoritmo es muy pequeño el sistema redondea el
  *  tiempo a 0 y por eso para cantidades muy chicas en el método matemático se puede ver
- *  que el programa dice que el tiempo tardado es 0
+ *  que el programa dice que el tiempo tardado es 0.
  * 
  *	El usuario debe ingresar para n una cantidad menor que: 4,294,967,295 = 2^32 - 1
  * 
