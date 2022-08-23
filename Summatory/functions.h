@@ -1,6 +1,11 @@
 /* Funciones de Suma de números enteros de 1 hasta n
  * En este módulo se incluyen tres funciones que hacen
- * la sumatoria a través de diferentes métodos
+ * la sumatoria de números consecutivos de 1 a n a través
+ * de diferentes métodos computacionales, entre los cuales 
+ * están:
+ *  	- Iterativo
+ *	- Recursivo
+ *	- Directo (matemático)
 */
 
 /*
