@@ -74,21 +74,25 @@ unsigned long int sumaRecursiva(unsigned int n){
  * 		Número entero positivo obtenido a través de la suma total de números
  * 		consecutivos comenzando en 1 hasta llegar a n
  * 		
- * Complejidad algoritmica temporal única: T(n) = 1
+ * Complejidad algoritmica temporal única: T(n) = 2
  * Complejidad algoritmica espacial: S(n) = 
  * 
- * Se utilizo la fórmula de Carl Gauss para calcular esta sumatoria
+ * Se utilizo la fórmula de Carl Friedrich Gauss para calcular esta sumatoria,
+ * la cuál es:
+ *  							n(n + 1)/2 
  * 
  * long unsigned int ocupa 8 bytes por lo tanto el valor máximo que puede alcanzar
  * es el de:
- * 					2^8(8) - 1 = 2^64 - 1
+ * 							2^8(8) - 1 = 2^64 - 1
  * 
- * Por lo tanto n(n + 1) debe ser menor a 2^64 - 1
+ * Por lo tanto n(n + 1) debe ser menor a 2^64 - 1 para esto se separó en 
  * 
 */
 
 unsigned long int sumaDirecta(unsigned int n){
-	unsigned long int sum = new 
-	return static_cast<unsigned long int>(n * (n + 1))/2;
+	long double prevSum = static_cast<long double>(n)/2;
+	unsigned long int sum = static_cast<unsigned long int>(prevSum * (n + 1));
+
+	return sum;
 }
 
