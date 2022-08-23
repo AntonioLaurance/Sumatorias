@@ -23,7 +23,7 @@
  * 		
  *
  * Complejidad algoritmica temporal única: T(n) = 3n + 3
- * Complejidad algoritmica espacial: S(n) = 
+ *
 */
 unsigned long int sumaIterativa(unsigned int n){
 	unsigned long int sum = 0;	// Acumulador 
@@ -50,7 +50,6 @@ unsigned long int sumaIterativa(unsigned int n){
  * Complejidad algoritmica temporal para el peor de los casos: 	T(n) = n
  * Complejidad algoritmica temporal para el mejor de los casos: T(n) = 0
  * 
- * Complejidad algoritmica espacial: S(n) = 
 */
 unsigned long int sumaRecursiva(unsigned int n){
 	// Caso base 
@@ -75,7 +74,6 @@ unsigned long int sumaRecursiva(unsigned int n){
  * 		consecutivos comenzando en 1 hasta llegar a n
  * 		
  * Complejidad algoritmica temporal única: T(n) = 2
- * Complejidad algoritmica espacial: S(n) = 
  * 
  * Se utilizo la fórmula de Carl Friedrich Gauss para calcular esta sumatoria,
  * la cuál es:
