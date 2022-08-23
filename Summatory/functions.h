@@ -3,7 +3,9 @@
  * la sumatoria de números consecutivos de 1 a n a través
  * de diferentes métodos computacionales, entre los cuales 
  * están:
- *  
+ *  	- Iterativo
+ *	- Recursivo
+ *	- Directo (matemático)
 */
 
 /*
