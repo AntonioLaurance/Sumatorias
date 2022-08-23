@@ -1,5 +1,10 @@
 /* Programación de Estructuras de datos y Algoritmos Fundamentales
  * Actividad 1.1: Funciones Iterativas, Recursivas y su análisis de Complejidad
+ *
+ * En este programa se analizan 3 diferentes algoritmos para sumar números consecutivos
+ * del 1 hasta el número entero positivo (n) dado por el usuario, especialmente se analiza
+ * su complejidad temporal con la finalidad de ver cuál es más óptimo a implementar para n grandes.
+ *
  * Victoria Rodríguez de León			A01656328
  * Ricardo Campos Luna				A01656898
  * Raúl Armando Vélez Robles			A01782488
@@ -12,14 +17,14 @@
 /* ------------------------------------------------------------------------------------------------
  * 					    TEST CASES
  * ------------------------------------------------------------------------------------------------
- *  1) Cuando la cantidad ingresada es muy grande, se provoca
- * 	desbordamiento de memoria (Stack Overflow) en el caso recursivo, los otros casos 
- *  funcionan bien mientras el resultado de la operación sea menor que lo que puede 
- * 	almacenar el tipo de dato long unsigned int que es 2^64 - 1 (generalmente). 
+ *  1) Cuando la cantidad ingresada es muy grande, se provoca desbordamiento de memoria 
+ *  (Stack Overflow) en el caso recursivo, los otros casos funcionan bien mientras el resultado 
+ *  de la operación sea menor que lo que puede almacenar el tipo de dato long unsigned int que 
+ *  es 2^64 - 1 (generalmente). 
  * 
  *  2) Cuando la cantidad ingresada es negativa, nuestro programa hace una reinterpretación
  *  binaria para convertirlo en un tipo unsigned int, sin embargo esta conversión es 
- * 	2^32 - [El valor absoluto del número insertado] y cuando el número negativo está más 
+ *  2^32 - [El valor absoluto del número insertado] y cuando el número negativo está más 
  *  cercano al 0, más cercano estará su conversión al número 2^32
  * 
  *  3) Cuando el usuario ingresa otra cosa que no son valores numéricos, el caso iterativo y
@@ -34,8 +39,6 @@
  *  Nota: El desbordamiento de memoria generalmente provoca que el sistema operativo aborte 
  * 	este programa. 
 */
-
-// ¿Ocupamos manejo de excepciones?
 
 #include <iostream>
 #include <time.h>
